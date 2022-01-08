@@ -1,7 +1,9 @@
-const http = require("http")
+// Modules
+const names = require("./4-names")
+const sayHi = require("./5-utils")
 
-const server = http.createServer((req, res) => {
+console.log(module)
 
-})
-
-server.listen(5000, ()=> console.log("salomlar bo'lsin"))
+sayHi("Megan")
+sayHi(names.john)
+sayHi(names.sarah) 
