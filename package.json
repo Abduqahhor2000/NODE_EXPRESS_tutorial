@@ -1,0 +1,26 @@
+{
+  "name": "node_express_tutorial",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abduqahhor2000/NODE_EXPRESS_tutorial.git"
+  },
+  "author": "Abduqahhor Norimmatov (abduqahhornorimmatov@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Abduqahhor2000/NODE_EXPRESS_tutorial/issues"
+  },
+  "homepage": "https://github.com/Abduqahhor2000/NODE_EXPRESS_tutorial#readme",
+  "dependencies": {
+    "express": "^4.17.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
