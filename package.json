@@ -18,7 +18,9 @@
   },
   "homepage": "https://github.com/Abduqahhor2000/NODE_EXPRESS_tutorial#readme",
   "dependencies": {
-    "express": "^4.17.2"
+    "bootstrap": "^5.1.3",
+    "express": "^4.17.2",
+    "lodash": "^4.17.21"
   },
   "devDependencies": {
     "dotenv": "^10.0.0",
