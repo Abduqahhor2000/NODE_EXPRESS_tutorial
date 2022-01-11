@@ -1,17 +1,19 @@
 const http = require('http')
+const fs = require("fs")
 
 const server = http.createServer((req, res) => {
-    if(req.url === "/"){
-        res.end("hello. you intered home page")
-    }
-    if(req.url === "/about"){
-        res.end("you are in about page")
-    }
+    // const data = fs.readFileSync("./content/big.txt", "utf-8")
+    // res.end(data)
 
-    res.end(`
-        <h1>Oops!!!</h1>
-        <p>Siz hozir kalla qo'ydingiz. Yana boshqatta kalla qo'yishni xohlasangiz <a href="/">buyerni</a> bosing.</p>
-   `)
+    const data = fs.createReadStream("./content/big.txt", {highWaterMark: 90000})
+
+    data.on("open", () => {
+        data.pipe(res)
+    })
+
+    data.on("error", (err) => {
+        res.end(err)
+    })
 })
 
-server.listen(5000) 
+server.listen(5000)
