@@ -4,7 +4,7 @@ const authorize = require("./authorize")
 const logger = require("./logger")
 const morgan = require("morgan")
 
-//  req => middleware => res
+// req => middleware => res
 
 // app.use([logger, authorize])
 // app.use(express.static('./public'))
